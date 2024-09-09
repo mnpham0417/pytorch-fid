@@ -1,3 +1,23 @@
+# Internal Comments for Greene
+
+Step 1: 
+Download the pre-trained Inception model
+```
+wget https://github.com/mseitzer/pytorch-fid/releases/download/fid_weights/pt_inception-2015-12-05-6726825d.pth
+```
+
+Step 2:
+Replace the `FID_WEIGHTS_LOCAL` variable in `/src/pytorch_fid/inception.py` with the path to the weights file downloaded in Step 1.
+
+Step 3:
+Install the package
+```
+pip install -e . 
+```
+
+Step 4:
+Run the FID calculation following the instructions below.
+
 [![PyPI](https://img.shields.io/pypi/v/pytorch-fid.svg)](https://pypi.org/project/pytorch-fid/)
 
 # FID score for PyTorch
